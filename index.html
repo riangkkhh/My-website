@@ -227,9 +227,9 @@ const p=t*t*(3-2*t),x1=a.x,y1=a.y-sy,x2=a.x+(b.x-a.x)*p,y2=y1+(b.y-a.y)*p;
 const col=light?`hsla(${e.h},75%,42%,`:`hsla(${e.h},85%,68%,`;
 wx.strokeStyle=col+'.12)';
 wx.beginPath();wx.moveTo(x1,y1);wx.lineTo(x2,y2);wx.stroke();
-wx.fillStyle=col+'.1)';
+wx.fillStyle=col+'.3)';
 wx.beginPath();wx.arc(x1,y1,2.2,0,7);wx.fill();
-if(p<1){wx.fillStyle=col+'1)';wx.beginPath();wx.arc(x2,y2,2.8,0,7);wx.fill()}}}
+if(p<1){wx.fillStyle=col+'.5)';wx.beginPath();wx.arc(x2,y2,2.8,0,7);wx.fill()}}}
 function init(){W=cv.width=wc.width=innerWidth;H=cv.height=wc.height=innerHeight;buildWeb();
 const n=calm?0:Math.min(1300,Math.floor(W*H/1500));
 P=Array.from({length:n},()=>{const x=Math.random()*W,y=Math.random()*H;return{x,y,px:x,py:y,vx:0,vy:0,hx:x,hy:y,h:hues[Math.random()*4|0],s:Math.random()<.35?90:25}})}
